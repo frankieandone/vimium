@@ -211,7 +211,8 @@ class Tween {
     };
 
     this.updateStyle(this.opacity);
-    this.intervalId = setInterval(performStep, 50);
+    // timer for search on page i.e. find mode
+    this.intervalId = setInterval(performStep, 10);
   }
 
   stop() {
